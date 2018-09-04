@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FinalFantasyIDB.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body{
+            background-color:rgb(56, 55, 55);
+            font-family:sans-serif;
+            color:rgb(161, 161, 161);
+        }
+        h1{
+            color:rgb(202, 201, 201);
+        }
+        p{
+            color:rgb(161, 161, 161);
+        }
+        a{
+            text-decoration:none;
+            color:rgb(125, 125, 125);
+            font-size:larger;
+        }
+        a:hover{
+            color:rgb(255, 255, 255);
+        }
+        hr{
+            color:rgb(81, 81, 81);
+            background-color:rgb(81, 81, 81);
+            height: 2px;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <a id="index" href="Index.aspx">Home</a>
+                <a id="jobs" href="Jobs.aspx">Jobs</a>
+                <a id="armors" href="Armors.aspx">Armors</a>
+                <a id="weapons" href="Weapons.aspx">Weapons</a>
+                <a id="jobweaponarmor" href="JobWeaponArmor.aspx">Weapons and Armors for Jobs</a>
+        </div>
+        <hr />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; <%: DateTime.Now.Year %> - Final Fantasy I DataBase</p>
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿input {
+    background-color: rgb(56, 55, 55);
+    color: rgb(161, 161, 161);
+    border: 1px solid;
+    height: 30px;
+    width: 70px;
+    font-size: medium;
+}
+
+    input:hover {
+        color: rgb(255, 255, 255);
+    }
+
+select {
+    background-color: rgb(56, 55, 55);
+    color: rgb(161, 161, 161);
+    border: 1px solid;
+    height: 20px;
+    width: 100px;
+    font-size: medium;
+}
+
+    select:hover {
+        color: rgb(255, 255, 255);
+    }

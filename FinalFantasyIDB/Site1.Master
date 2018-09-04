@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FinalFantasyIDB.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style/StyleSheetmasterpage.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <a id="index" href="Index.aspx" onclick="linkcolor(index)">Home</a>
+                <a id="jobs" href="Jobs.aspx">Jobs</a>
+                <a id="armors" href="Armors.aspx">Armors</a>
+                <a id="weapons" href="Weapons.aspx">Weapons</a>
+                <a id="jobweaponarmor" href="JobWeaponArmor.aspx">Weapons and Armors for Jobs</a>
+                <a id="updatedatabase" href="UpdateDatabase.aspx">Update</a>
+        </div>
+        <hr />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; <%: DateTime.Now.Year %> - Final Fantasy I DataBase</p>
+        </footer>
+        <script type="text/javascript" src="Script/JavaScript1.js"></script>
+    </form>
+</body>
+</html>
